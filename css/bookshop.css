@@ -1,0 +1,49 @@
+.mod-top-search{
+    display: flex;
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    height: 3.38rem;
+    z-index: 100;
+}
+.mod-top-search .top-search-img{
+    width: 1.8rem; height: 1.8rem;
+    margin-right: 2rem;
+
+}
+
+.top-text{
+    height: 2.24rem;
+    flex: 1;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    margin-right:1.3rem;
+    margin-left: 1.3rem;
+    border-radius: 0.4rem;
+}
+.top-text a{
+    text-decoration: none;
+    text-align: center;
+}
+.top-text img{
+    width: 1.5rem; height: 1.5rem;
+    margin-left: 0.2em;
+    margin-right: 0.5em;
+}
+.top-text span{
+    font-size: 1.2em;
+    color: black;
+    margin-left: 0.8em;
+
+}
+
+
+
+
+
+
