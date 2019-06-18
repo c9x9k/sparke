@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>火星英语-图书配套</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/books.css">
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+				font-family: "微软雅黑";
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			a {
+				color: #c3c6ca;
+				text-decoration: none;
+			}
+			
+
+			a:hover,
+			a:focus {
+				color: #c3c6ca;
+				text-decoration: underline;
+			}
+
+			a:focus {
+				outline: thin dotted;
+				outline: 5px auto -webkit-focus-ring-color;
+				outline-offset: -2px;
+			}
+
+			.padd_40 {
+				padding-top: 80px;
+				background: #F5F5F5;
+				overflow-x: hidden;
+			}
+
+			.a {
+				text-align: center;
+				line-height: 40px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 10;
+				border-bottom: 1px #ccc solid;
+				background: #fefefe;
+				color:black;
+				font-size: 1.225rem;
+				font-weight: 600;
+			}
+			
+			.a img{
+				/* float: left; */
+				margin: 9px auto;
+				position: absolute;
+				left: 0px;
+			}
+
+			.tab {
+				display: flex;
+				line-height: 40px;
+				position: fixed;
+				top: 40px;
+				width: 100%;
+				z-index: 10;
+				border-bottom: 1px #ccc solid;
+			}
+
+			.tab a {
+				text-decoration: none;
+				width: 33.333333%;
+				background: #fff;
+				text-align: center;
+				font-size: 0.925rem;
+			}
+
+			.tab .active {
+				border-bottom: 3px #3c80f6 solid;
+				color: black;
+			}
+
+			.panel {
+				margin: 0;
+			}
+
+			.refreshtip {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				margin: 10px 0;
+				text-align: center;
+				color: #999;
+			}
+
+			.swiper-container {
+				overflow: visible;
+			}
+
+			.loadtip {
+				display: block;
+				width: 100%;
+				line-height: 40px;
+				height: 40px;
+				text-align: center;
+				color: #999;
+				border-top: 1px solid #ddd;
+			}
+
+			.swiper-container,
+			.w {
+				height: calc(100vh - 120px);
+			}
+
+			.swiper-slide {
+				height: auto;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.list-group {
+				padding-left: 0;
+				margin-bottom: 20px;
+			}
+
+			.list-group-item {
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+				margin-bottom: -1px;
+				background-color: #fff;
+				/*border: 1px solid #ddd;*/
+			}
+
+			.list-group-item:first-child {
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+			}
+			.list-group-item .content-book{
+				width: 100%;
+				/*height: 7.7rem;*/
+			}
+			.list-group-item .content-item img{
+				width: 80px;
+				height: 80px;
+			} 
+			.list-group-item .content-book-list .desc{
+				overflow: hidden;
+				height: 1.3rem
+			}
+
+			.list-group-item .content-book-list .desc a{
+				font-size: 12px;
+				color: #2c2c2c;
+				
+
+			}
+			.list-group-item .content-item{
+				width: 30%;
+				/*height: 5.6rem;*/
+			}
+			.content-book-list {
+				display: flex;
+				width: 100%;
+				/*height: 4.6rem;*/
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+
+			}
+			.list-group-item .content-time{
+				width: 100%;
+				font-size: 12px;
+				color: blue;
+
+			}
+			
+		</style>
+	</head>
+	<body class="padd_40">
+		<div class="a">
+			<a href=""><img src="image/icon.png" width="25px" height="25px"/></a>
+			图书配套
+		</div>
+		<div class="tab">
+			<a class="active" href="javascript:;">四级</a>
+			<a href="javascript:;">六级</a>
+			<a href="javascript:;">考研</a>
+			<a href="javascript:;">专四</a>
+			<a href="javascript:;">专八</a>
+		</div>
+		<div class="swiper-container">
+			<div class="refreshtip">下拉可以刷新</div>
+			<div class="swiper-wrapper w">
+				<div class="swiper-slide d">
+					<div class="init-loading list-group-item text-center" style="display: none;">下拉可以刷新</div>
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide list-group">
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2019年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2017年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2017年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>		
+							</div>
+							<div class="swiper-slide list-group">
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2019年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								
+							</div>
+							<div class="swiper-slide list-group">
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2019年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>	
+							</div>
+							<div class="swiper-slide list-group">
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2019年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>	
+							</div>
+							<div class="swiper-slide list-group">
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2019年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年12月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	            <div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>
+								<div class="list-group-item">
+						            <div class="content-book">
+						            	<div class="content-time">
+							                <p>2018年06月</p>
+						                </div>
+						    	        <div class="content-book-list">
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        	<div class="content-item">
+						    		            <div class="image">
+						    		                <a href="#"><img src="image/ebook1.webp"></a>
+                                                </div>
+						    	                <div class="desc">
+						    		                <a href="#">DSQ191全真试题+标准模拟（4级）（备战2019.6）</a>
+						    	                </div>
+						    	            </div>
+						    	        </div>	
+								    </div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="loadtip">上拉加载更多</div> -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var loadFlag = true;
+			var oi = 0;
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				scrollbar: '.swiper-scrollbar',
+				slidesPerView: 'auto',
+				mousewheelControl: true,
+				freeMode: true,
+				onTouchMove: function(swiper) { //手动滑动中触发
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+
+
+					if (mySwiper.translate < 50 && mySwiper.translate > 0) {
+						$(".init-loading").html('下拉刷新...').show();
+					} else if (mySwiper.translate > 50) {
+						$(".init-loading").html('释放刷新...').show();
+					}
+				},
+				onTouchEnd: function(swiper) {
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+					if (mySwiper.translate >= 50) {
+						$(".init-loading").html('正在刷新...').show();
+						$(".loadtip").html('上拉加载更多');
+						loadFlag = true;
+
+						setTimeout(function() {
+							$(".refreshtip").show(0);
+							$(".init-loading").html('刷新成功！');
+							setTimeout(function() {
+								$(".init-loading").html('').hide();
+							}, 800);
+							$(".loadtip").show(0);
+
+							//刷新操作
+							mySwiper.update(); // 重新计算高度;
+						}, 1000);
+					} else if (mySwiper.translate >= 0 && mySwiper.translate < 50) {
+						$(".init-loading").html('').hide();
+					}
+					return false;
+				}
+			});
+			var mySwiper2 = new Swiper('.swiper-container2', {
+				onTransitionEnd: function(swiper) {
+
+					$('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+					$('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height',
+						'0px');
+					mySwiper.update();
+
+					$('.tab a').eq(mySwiper2.activeIndex).addClass('active').siblings('a').removeClass('active');
+				}
+
+			});
+			$('.tab a').click(function() {
+
+				$(this).addClass('active').siblings('a').removeClass('active');
+				mySwiper2.slideTo($(this).index(), 500, false)
+
+				$('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+				$('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+				mySwiper.update();
+			});
+		</script>
+	</body>
+</html>
