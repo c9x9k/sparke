@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.div_body{
+	width:100%;
+	height: auto;
+}
+header{
+	width: 100%;
+	height: 3rem;
+	overflow: hidden;
+	text-align: center;
+}
+.arrow{
+	width:2rem;
+	height:2rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 0.6rem;
+}
+.index_middle{
+	display: inline-block;
+	line-height: 3.0rem;
+}
+.index_middle span{
+	font-size: 1.5rem;
+	display: block;
+}
+.newword{
+	width: 100%;
+	height: 100%;
+}
+.new_ul{
+	list-style-type: none;
+	margin-top: 0;
+}
+.new_ul li{
+	width: 100%;
+	height:3rem;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid gainsboro;
+}
+.ul_div{
+	font-weight:bold;
+	font-size: 1.3rem;
+}
+.ul_span{
+	font-size: 0.8rem;
+	color: gray;
+}

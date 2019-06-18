@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.div_body{
+	width:100%;
+	height: auto;
+}
+header{
+	width: 100%;
+	height: 3rem;
+	overflow: hidden;
+	text-align: center;
+}
+.arrow{
+	width:2rem;
+	height:2rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 0.6rem;
+}
+.index_middle{
+	display: inline-block;
+	width:6rem;
+	height: 3rem;
+	margin: 0 auto;
+	line-height: 3.0rem;
+	background: url(../img/arrow_xia.jpg)  no-repeat right center;
+	background-size: 1.3rem 1.3rem;
+	vertical-align: top;
+}
+.index_middle span{
+	font-size: 1.5rem;
+	display: block;
+}
+.div_item{
+	margin-top:2rem;
+	width: 100%;
+	height: auto;
+
+}
+#downmore{
+	float: right;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 1.3rem;
+	margin-right:1rem;
+}
+.words_main{
+	line-height: 4rem;
+	width: 90%;
+	margin: 0 auto;
+	padding-left: 0.8rem;
+	box-shadow: 3px 5px 9px 0px rgb(0,0,0,0.2);
+	border-radius: 0.5rem;	
+	margin-top: 1rem;
+}
+.words_main img{
+	width: 3.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+}
+.words_main span{
+	width: 1px;
+	height: 3rem;
+	font-size:1.8rem;
+	color: gainsboro;
+}
+.div_span{
+	font-size: 1.3rem;
+	display: inline-block;
+	margin-left: 2rem;
+}
+.bpicture{
+	width: 100%;
+	height:30%;
+	margin-top: 2rem;
+}
+.bpicture img{
+	width: 100%;
+	height: 30%;
+}
+.choice{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 15%;
+	display: none;
+}
+
+.choice_ul{
+	list-style-type: none;
+	padding-inline-start: 0px;
+	margin-block-start: 0em;
+}
+.choice_ul li{
+	font-size: 1.3rem;
+	font-family:"微软雅黑";
+	text-align: center;
+}
+
+.color1{
+	background-color: darkgrey;
+}
+.color2{
+	background-color: white;
+}
+.test_four{
+	width:70%;
+	display: none;
+	margin: 0.7rem auto;
+	height: 12rem;
+	padding: 0.8rem 2rem;
+	box-shadow: 3px 5px 9px 0px rgb(0,0,0,0.2);
+	border-radius: 0.5rem;	
+}
+.test_ul{
+	list-style-type: none;
+	margin-block-start: 0em;
+    padding-inline-start: 0px;
+	
+}
+.test_ul img{
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 1rem;
+	display: inline-block;
+	float: right;
+	margin-right: 1.5rem;
+	}
+a{
+	text-decoration: none;
+	color: black;
+}
+.test_ul li{
+	font-size: 1.2rem;
+	font-family: arial;
+	height: 3rem;
+	line-height: 3rem;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 6px 3px 14px 0px rgb(0,0,0,0.2);
+}
