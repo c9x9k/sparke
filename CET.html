@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>星火英语-四六级</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+				font-family: "微软雅黑";
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			a {
+				color: #c3c6ca;
+				text-decoration: none;
+			}	
+
+			a:hover,
+			a:focus {
+				color: #c3c6ca;
+				text-decoration: underline;
+			}
+
+			a:focus {
+				outline: thin dotted;
+				outline: 5px auto -webkit-focus-ring-color;
+				outline-offset: -2px;
+			}
+
+			.cet-body {
+				padding-top: 80px;
+				overflow: hidden;
+			}
+
+			.back {
+				text-align: center;
+				line-height: 40px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 10;
+				background: #fff;
+				font-size: 1.225rem;
+				font-weight: 600;
+			}
+			
+			.back img{
+				margin: 9px;
+				position: absolute;
+				left: 0px;
+			}
+
+			.cet-tab {
+				display: flex;
+				line-height: 40px;
+				position: fixed;
+				top: 40px;
+				width: 100%;
+				z-index: 10;
+				border-bottom: 1px #d0d0d0 solid;
+			}
+
+			.cet-tab a {
+				text-decoration: none;
+				width: 33.333333%;
+				background: #fff;
+				text-align: center;
+				font-size: 1.025rem;
+			}
+
+			.cet-tab .cet-class-all {
+				border-bottom: 3px #3c80f6 solid;
+				color: black;
+			}
+
+			.panel {
+				margin: 0;
+			}
+
+			.refreshtip {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				margin: 10px 0;
+				text-align: center;
+				color: #999;
+			}
+
+			.swiper-container {
+				overflow: visible;
+			}
+
+			.loadtip {
+				display: block;
+				width: 100%;
+				line-height: 40px;
+				height: 40px;
+				text-align: center;
+				color: #999;
+				border-top: 1px solid #ddd;
+			}
+
+			.swiper-container,
+			.w {
+				height: calc(100vh - 120px);
+			}
+
+			.swiper-slide {
+				height: auto;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.list-group {
+				padding-left: 0;
+				margin-bottom: 20px;
+			}
+
+			.list-group-item {
+				position: relative;
+				display: block;
+				padding: 10px 10px;
+				margin-bottom: -1px;
+				background-color: #fff;
+			}
+
+			.list-group-item:first-child {
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+			}
+			.course-class{
+	           width: 94%;
+	           margin:0 auto;
+	           height: 7.6rem;
+	           box-shadow: 0.1rem 0.1rem 0.3rem #d0d0d0;
+            }
+            .course-class-detail{
+	           width: 100%;
+	           height: 5.6rem;
+	           display: flex;
+	           justify-content: space-between;
+            }
+           .course-image{
+              width: 34%;
+              height: 5.6rem;
+            }
+           .course-image img{
+	          width: 100%;
+	          height: 100%;
+	          border-top-left-radius: 4px;
+            }
+           .course-content{
+	          width: 62%;
+	          height: 5.6rem;
+            }
+           .course-content-title{
+              padding-right: 2rem;
+              overflow: hidden;
+              font-size: 14px;
+              margin-top: 0.4rem;
+              font-weight:600;
+              color: #222831;
+              -webkit-line-clamp:2;
+              height:2.0rem;
+              line-height: 1rem;
+           }
+			.course-content-date{
+			   margin-top: 0.1rem;
+				font-size:0.6rem;
+				color: #c3c3cb;
+			}
+			.course-content-teacher{
+				margin-top: 0.5rem;
+				display: flex;
+				align-items: center;
+			}
+			.teacher-name{
+				color: #fff;
+				font-size: 12px;
+				width: 3.6rem;
+				height: 1.2rem;
+				line-height: 1.2rem;
+				text-align: center;
+				background-color: #4c84ff;
+				opacity: 0.4;
+				margin-right: 0.5rem;
+				border-top-left-radius: 0.6rem;
+				border-top-right-radius: 0.6rem;
+				border-bottom-left-radius: 0.6rem;
+			}
+			.course-class-buy{
+				width: 100%;
+				height: 2rem;
+				background-color: #f5f5f5;
+				line-height: 2rem;
+				padding-left: 0.8rem;
+				padding-right: 0.8rem;
+			}
+			.classs-buy-amount{ 
+                font-size: 12px;
+                color: #999;
+			}
+			.class-buy-price-2{
+				float: right;
+			}
+			.class-buy-price-2 a{
+				color: black;
+				font-size: 14px;
+			}
+			.class-buy-price-1{
+               float: right;
+               font-size: 10px;
+               color: #888;
+               text-decoration: line-through;
+               margin-right: 0.5rem;
+			}
+			
+		</style>
+	</head>
+<body class="cet-body">
+  <div class="back">
+	<a href="#"><img src="image/back.png" width="25px" height="25px"/></a>
+			四六级
+	 </div>
+	  <div class="cet-tab">
+		<a class="cet-class-all" href="javascript:;">全部</a>
+		<a href="javascript:;">系统课</a>
+		<a href="javascript:;">公开课</a>
+	  </div>
+	  <div class="swiper-container">
+		<div class="refreshtip">下拉可以刷新</div>
+		 <div class="swiper-wrapper w">
+			<div class="swiper-slide d">
+				<div class="init-loading list-group-item text-center" style="display: none;">下拉可以刷新</div>
+				<div class="swiper-container2">
+				  <div class="swiper-wrapper">
+					 <div class="swiper-slide list-group">
+					   <div class="list-group-item">
+					      <div class="course-class">
+                            <div class="course-class-detail">
+                               <div class="course-image">
+                                  <a href="#"><img src="image/all-1.jpg"></a>
+                               </div>
+                               <div class="course-content">
+                               <div class="course-content-title">四级考前押题班</div>
+                                 <span class="course-content-date">开课:2019.06.10~06.13 | 8课时</span>
+                               <div class="course-content-teacher">
+                                  <div class="teacher-name">邵雯</div>
+                                  <div class="teacher-name">胡贻铸</div>
+                                  <div class="teacher-name">李萌</div>
+                              </div>
+                            </div>
+                       </div>
+                            <div class="course-class-buy">
+                              <span class="classs-buy-amount">
+                              限购15000人 已有13071人购买</span>
+                              <span class="class-buy-price-2"><a href="#">￥29.90</a></span>
+                              <span class="class-buy-price-1">￥59.90</span>
+                              
+                            </div>
+                          </div>
+                     </div>
+					 <div class="list-group-item">
+                          <div class="course-class">
+				              <div class="course-class-detail">
+				               <div class="course-image">
+				                     <a href="#"><img src="image/all-2.jpg"></a>
+				               </div>
+				               <div class="course-content">
+				                 <div class="course-content-title">六级考前押题班</div>
+				                 <span class="course-content-date">开课:2019.06.10~06.13 | 8课时</span>
+				                 <div class="course-content-teacher">
+				                   <div class="teacher-name">邵雯</div>
+				                   <div class="teacher-name">胡贻铸</div>
+				                   <div class="teacher-name">李萌</div>
+				                 </div>
+				               </div>
+				            </div>
+				          <div class="course-class-buy">
+				              <span class="classs-buy-amount">
+				                限购10000人 已有1245人购买</span>
+				              <span class="class-buy-price-2"><a href="#">￥29.90</a></span>
+				              <span class="class-buy-price-1">￥59.90</span>                      
+				            </div>
+                          </div>
+					 </div>
+					 <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-3.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">【含押题班及26h冲刺陪练】四级艾考智能过级包</div>
+			                 <span class="course-content-date">开课:2019.03.11~06.13 | 96课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻铸</div>
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购35000人 已有33214人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥99.00</a></span>
+			              <span class="class-buy-price-1">￥299.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+					 <div class="list-group-item">
+					   <div class="course-class">
+          <div class="course-class-detail">
+               <div class="course-image">
+                     <a href="#"><img src="image/all-4.jpg"></a>
+               </div>
+               <div class="course-content">
+                 <div class="course-content-title">星火英语四六级解析大会</div>
+                 <span class="course-content-date">开课:2019.06.14~06.15 | 5课时</span>
+                 <div class="course-content-teacher">
+                   <div class="teacher-name">邵雯</div>
+                   <div class="teacher-name">胡贻铸</div>
+                   <div class="teacher-name">陈昊</div>
+                 </div>
+               </div>
+            </div>
+          <div class="course-class-buy">
+              <span class="classs-buy-amount">
+                限购5000人 已有3680人购买</span>
+              <span class="class-buy-price-2"><a href="#">免费</a></span>
+              <span class="class-buy-price-1"></span>
+                              
+            </div>
+        </div>
+				  </div>
+					  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-3.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">【含押题班及26h冲刺陪练】六级艾考智能过级包</div>
+			                 <span class="course-content-date">开课:2019.03.12~06.13 | 96课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻铸</div>
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购25000人 已有21254人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥99.00</a></span>
+			              <span class="class-buy-price-1">￥299.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+					  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-5.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级听力 虐耳精听【随到随学】</div>
+			                 <span class="course-content-date">开课:2019.03.29~06.03 | 40课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购15000人 已有10223人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-5.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级听力 虐耳精听【随到随学】</div>
+			                 <span class="course-content-date">开课:2019.03.31~06.04 | 40课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购15000人 已有9965人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				   <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-7.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级阅读 阅法三章</div>
+			                 <span class="course-content-date">开课:2019.04.141~05.25 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">胡贻涛</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购1500人 已有1173人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥59.00</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-8.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级阅读 阅法三章</div>
+			                 <span class="course-content-date">开课:2019.04.13~05.24 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">胡贻涛</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购1200人 已有807人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥59.00</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-9.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级词汇 高频速记 【点击课程目录 免费试听】</div>
+			                 <span class="course-content-date">15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                666人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-10.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级词汇 高频速记 【点击课程目录 免费试听】</div>
+			                 <span class="course-content-date">15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                521人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-11.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四六级必考语法20讲【限时特惠9.9元 可免费试听】</div>
+			                 <span class="course-content-date">开课：2019-04-28~05-29 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购10000人 已有8354人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥9.90</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-12.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">星火英语四级万人大模考</div>
+			                 <span class="course-content-date">开课:2019.05.23~05.23 | 2课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻涛</div>
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购8000人 已有7844人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥1.00</a></span>
+			              <span class="class-buy-price-1">￥29.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+				   <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-13.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">星火英语六级万人大模考</div>
+			                 <span class="course-content-date">开课:2019.05.24~05.24 | 2课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻涛</div>
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购5000人 已有4273人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥1.00</a></span>
+			              <span class="class-buy-price-1">￥29.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-14.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">决战30天 冲刺大逆袭（含口语课程）</div>
+					                 <span class="course-content-date">开课:2019.05.15~05.22 | 6课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购25000人 已有246585人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                      </div>
+                      <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-15.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">四六级考前60天高分秘籍</div>
+					                 <span class="course-content-date">开课:2019.04.15~04.19 | 5课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购350000人 已有301281人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                       </div>
+                        <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-16.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">四六级成绩解析&新学期备考全攻略</div>
+					                 <span class="course-content-date">开课:2019.02.26~03.08 | 5课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                   <div class="teacher-name">胡贻铸</div>
+					                   <div class="teacher-name">陈昊</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购450000人 已有400777人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                       </div>
+
+		        </div>
+
+				<!-- 系统课 -->
+				<div class="swiper-slide list-group">
+				   <div class="list-group-item">
+					      <div class="course-class">
+                            <div class="course-class-detail">
+                               <div class="course-image">
+                                  <a href="#"><img src="image/all-1.jpg"></a>
+                               </div>
+                               <div class="course-content">
+                               <div class="course-content-title">四级考前押题班</div>
+                                 <span class="course-content-date">开课:2019.06.10~06.13 | 8课时</span>
+                               <div class="course-content-teacher">
+                                  <div class="teacher-name">邵雯</div>
+                                  <div class="teacher-name">胡贻铸</div>
+                                  <div class="teacher-name">李萌</div>
+                              </div>
+                            </div>
+                       </div>
+                            <div class="course-class-buy">
+                              <span class="classs-buy-amount">
+                              限购15000人 已有13071人购买</span>
+                              <span class="class-buy-price-2"><a href="#">￥29.90</a></span>
+                              <span class="class-buy-price-1">￥59.90</span>  
+                            </div>
+                          </div>
+                     </div>
+					 <div class="list-group-item">
+                          <div class="course-class">
+				              <div class="course-class-detail">
+				               <div class="course-image">
+				                     <a href="#"><img src="image/all-2.jpg"></a>
+				               </div>
+				               <div class="course-content">
+				                 <div class="course-content-title">六级考前押题班</div>
+				                 <span class="course-content-date">开课:2019.06.10~06.13 | 8课时</span>
+				                 <div class="course-content-teacher">
+				                   <div class="teacher-name">邵雯</div>
+				                   <div class="teacher-name">胡贻铸</div>
+				                   <div class="teacher-name">李萌</div>
+				                 </div>
+				               </div>
+				            </div>
+				          <div class="course-class-buy">
+				              <span class="classs-buy-amount">
+				                限购10000人 已有1245人购买</span>
+				              <span class="class-buy-price-2"><a href="#">￥29.90</a></span>
+				              <span class="class-buy-price-1">￥59.90</span>                      
+				            </div>
+                          </div>
+					 </div>
+					 <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-3.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">【含押题班及26h冲刺陪练】四级艾考智能过级包</div>
+			                 <span class="course-content-date">开课:2019.03.11~06.13 | 96课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻铸</div>
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购35000人 已有33214人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥99.00</a></span>
+			              <span class="class-buy-price-1">￥299.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+					  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-3.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">【含押题班及26h冲刺陪练】六级艾考智能过级包</div>
+			                 <span class="course-content-date">开课:2019.03.12~06.13 | 96课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻铸</div>
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购25000人 已有21254人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥99.00</a></span>
+			              <span class="class-buy-price-1">￥299.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+					  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-5.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级听力 虐耳精听【随到随学】</div>
+			                 <span class="course-content-date">开课:2019.03.29~06.03 | 40课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购15000人 已有10223人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-5.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级听力 虐耳精听【随到随学】</div>
+			                 <span class="course-content-date">开课:2019.03.31~06.04 | 40课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购15000人 已有9965人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				   <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-7.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级阅读 阅法三章</div>
+			                 <span class="course-content-date">开课:2019.04.141~05.25 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">胡贻涛</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购1500人 已有1173人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥59.00</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+				  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-8.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级阅读 阅法三章</div>
+			                 <span class="course-content-date">开课:2019.04.13~05.24 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">胡贻涛</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购1200人 已有807人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥59.00</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-9.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四级词汇 高频速记 【点击课程目录 免费试听】</div>
+			                 <span class="course-content-date">15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                666人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-10.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">六级词汇 高频速记 【点击课程目录 免费试听】</div>
+			                 <span class="course-content-date">15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">陈昊</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                521人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥69.00</a></span>
+			              <span class="class-buy-price-1">￥69.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-11.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">四六级必考语法20讲【限时特惠9.9元 可免费试听】</div>
+			                 <span class="course-content-date">开课：2019-04-28~05-29 | 15课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购10000人 已有8354人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥9.90</a></span>
+			              <span class="class-buy-price-1">￥59.00</span>
+			           </div>                  
+			        </div>
+				  </div>
+                  <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-12.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">星火英语四级万人大模考</div>
+			                 <span class="course-content-date">开课:2019.05.23~05.23 | 2课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻涛</div>
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购8000人 已有7844人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥1.00</a></span>
+			              <span class="class-buy-price-1">￥29.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+				   <div class="list-group-item">
+					   <div class="course-class">
+			              <div class="course-class-detail">
+			               <div class="course-image">
+			                     <a href="#"><img src="image/all-13.jpg"></a>
+			               </div>
+			               <div class="course-content">
+			                 <div class="course-content-title">星火英语六级万人大模考</div>
+			                 <span class="course-content-date">开课:2019.05.24~05.24 | 2课时</span>
+			                 <div class="course-content-teacher">
+			                   <div class="teacher-name">邵雯</div>
+			                   <div class="teacher-name">胡贻涛</div>
+			                   <div class="teacher-name">李萌</div>
+			                 </div>
+			               </div>
+			            </div>
+			            <div class="course-class-buy">
+			              <span class="classs-buy-amount">
+			                限购5000人 已有4273人购买</span>
+			              <span class="class-buy-price-2"><a href="#">￥1.00</a></span>
+			              <span class="class-buy-price-1">￥29.90</span>
+			           </div>                  
+			        </div>
+				  </div>
+				</div>
+					<div class="swiper-slide list-group">
+					  <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-4.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">星火英语四六级解析大会</div>
+					                 <span class="course-content-date">开课:2019.06.14~06.15 | 5课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                   <div class="teacher-name">胡贻铸</div>
+					                   <div class="teacher-name">陈昊</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购10000人 已有7467人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+				    </div>
+				    <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-14.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">决战30天 冲刺大逆袭（含口语课程）</div>
+					                 <span class="course-content-date">开课:2019.05.15~05.22 | 6课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购25000人 已有246585人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                      </div>
+                      <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-15.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">四六级考前60天高分秘籍</div>
+					                 <span class="course-content-date">开课:2019.04.15~04.19 | 5课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购350000人 已有301281人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                       </div>
+                        <div class="list-group-item">
+					     <div class="course-class">
+					          <div class="course-class-detail">
+					               <div class="course-image">
+					                     <a href="#"><img src="image/all-16.jpg"></a>
+					               </div>
+					               <div class="course-content">
+					                 <div class="course-content-title">四六级成绩解析&新学期备考全攻略</div>
+					                 <span class="course-content-date">开课:2019.02.26~03.08 | 5课时</span>
+					                 <div class="course-content-teacher">
+					                   <div class="teacher-name">邵雯</div>
+					                   <div class="teacher-name">胡贻铸</div>
+					                   <div class="teacher-name">陈昊</div>
+					                 </div>
+					               </div>
+					            </div>
+					          <div class="course-class-buy">
+					              <span class="classs-buy-amount">
+					                限购450000人 已有400777人购买</span>
+					              <span class="class-buy-price-2"><a href="#">免费</a></span>
+					              <span class="class-buy-price-1"></span>
+                              </div>
+                       </div>
+                       </div>
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="loadtip">上拉加载更多</div> -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var loadFlag = true;
+			var oi = 0;
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				scrollbar: '.swiper-scrollbar',
+				slidesPerView: 'auto',
+				mousewheelControl: true,
+				freeMode: true,
+				onTouchMove: function(swiper) { //手动滑动中触发
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+
+
+					if (mySwiper.translate < 50 && mySwiper.translate > 0) {
+						$(".init-loading").html('下拉刷新...').show();
+					} else if (mySwiper.translate > 50) {
+						$(".init-loading").html('释放刷新...').show();
+					}
+				},
+				onTouchEnd: function(swiper) {
+					var _viewHeight = document.getElementsByClassName('swiper-wrapper')[0].offsetHeight;
+					var _contentHeight = document.getElementsByClassName('swiper-slide')[0].offsetHeight;
+					// 上拉加载
+					// if(mySwiper.translate <= _viewHeight - _contentHeight - 50 && mySwiper.translate < 0) {
+					// 	// console.log("已经到达底部！");
+					//    
+					// 	if(loadFlag){
+					// 		$(".loadtip").html('正在加载...');
+					// 	}else{
+					// 		$(".loadtip").html('没有更多啦！');
+					// 	}
+					// 	
+					// 	setTimeout(function() {
+					// 		for(var i = 0; i <5; i++) {
+					// 			oi++;
+					// 			$(".list-group").eq(mySwiper2.activeIndex).append('<li class="list-group-item">我是加载出来的'+oi+'...</li>');
+					// 		}
+					// 		 $(".loadtip").html('上拉加载更多...');
+					// 		mySwiper.update(); // 重新计算高度;
+					// 	}, 800);
+					// }
+
+					// 下拉刷新
+					if (mySwiper.translate >= 50) {
+						$(".init-loading").html('正在刷新...').show();
+						$(".loadtip").html('上拉加载更多');
+						loadFlag = true;
+
+						setTimeout(function() {
+							$(".refreshtip").show(0);
+							$(".init-loading").html('刷新成功！');
+							setTimeout(function() {
+								$(".init-loading").html('').hide();
+							}, 800);
+							$(".loadtip").show(0);
+
+							//刷新操作
+							mySwiper.update(); // 重新计算高度;
+						}, 1000);
+					} else if (mySwiper.translate >= 0 && mySwiper.translate < 50) {
+						$(".init-loading").html('').hide();
+					}
+					return false;
+				}
+			});
+			var mySwiper2 = new Swiper('.swiper-container2', {
+				onTransitionEnd: function(swiper) {
+
+					$('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+					$('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height',
+						'0px');
+					mySwiper.update();
+
+					$('.tab a').eq(mySwiper2.activeIndex).addClass('cet-class-all').siblings('a').removeClass('cet-class-all');
+				}
+
+			});
+			$('.cet-tab a').click(function() {
+
+				$(this).addClass('cet-class-all').siblings('a').removeClass('cet-class-all');
+				mySwiper2.slideTo($(this).index(), 500, false)
+
+				$('.w').css('transform', 'translate3d(0px, 0px, 0px)')
+				$('.swiper-container2 .swiper-slide-active').css('height', 'auto').siblings('.swiper-slide').css('height', '0px');
+				mySwiper.update();
+			});
+		</script>
+	</body>
+</html>
