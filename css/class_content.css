@@ -1,0 +1,42 @@
+.head{
+    width: 100%;height:4rem;
+
+}
+.class_logo{width: 100%;}
+.class_logo img{width: 100%}
+.head a{height: 2rem}
+.head img{width:15%;}
+.list_click{display: none}
+html{font-size: 2rem;}
+.list_click h2{text-align: center; color: aquamarine}
+.class_list ul li{display: inline-block;width:24%; }
+.class_list ul li{border-bottom:1px aliceblue solid;text-align: center}
+.class_list ul li div{text-align: left}
+.class_list ul li div li{text-align: left}
+.class_list ol li{border-bottom:1px aliceblue solid ;display: block ;width: 90%}
+
+.list_click img{width: 99%}
+.class_space{background-color: whitesmoke;height: 1rem;}
+.class_tip{background-color: gainsboro}
+.ad_font_style img{width: 5%}
+.buy_and_price .costomer_serve{width: 18%}
+.tick_font_style img{width: 10%;height: 2.5rem}
+.buy_and_price{width: 100%;height: 5rem;position: fixed;bottom: 0rem;left: 0;background-color: white;border-top:0.5px gray dashed;}
+.buy_and_price .buy_{width: 29% ;margin:0;text-align: center;line-height: 100%;border-left:1px #DCDCDC solid; }
+.buy_and_price img{width: 30%}
+.buy_and_price div{display: inline-block;}
+.buy_and_price .price{width: 50%;}
+.price .price_color{color: orangered}
+.buy_ .buy_button{margin: 0 auto; background-color: orangered;color: whitesmoke;border-radius:0.5rem;width: 60% ;line-height: 252%;height: 2rem;}
+.head h2{display:inline-block;text-align: center;line-height: 2rem;height: 2rem;width: 68%;margin: 0;padding: 0}
+.list_click_categary{position: absolute;display: none}
+.hidden_tercher img{width:10%}
+.hidden_tercher{position: absolute;display: none;}
+.hidden_mark{text-align: center;margin: 0  auto;}
+.hidden_mark img{width: 99%}
+.hidden_mark,.hidden_tercher,.list_click,.list_click_categary{position: absolute;left:0rem;display: none;width: 99%}
+.class_list li span{color:gainsboro;}
+.class_list li span:hover{color: black}
+.class_list li:hover{border-bottom: dimgrey 1px solid;}
+.class_list li span:hover+div{display: block}
+.content_title{margin: 0 auto;text-align: center}

@@ -3,34 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>课程详情</title>
-    <style>
-        .head{
-            width: 100%;height:4rem;
-
-        }
-        .class_logo{width: 100%;}
-        .class_logo img{width: 100%}
-       .head a{height: 2rem}
-        .head img{width:15%;}
-        html ,p, span {margin: 0; padding: 0}
-        html{font-size: 2rem;}
-        .list_click h2{text-align: center; color: aquamarine}
-        .class_list ul li{display: inline-block;}
-        .list_click img{width: 99%}
-        .class_space{background-color: whitesmoke;height: 1rem;}
-        .class_tip{background-color: gainsboro}
-        .ad_font_style img{width: 5%}
-        .buy_and_price .costomer_serve{width: 18%}
-        .tick_font_style img{width: 10%;height: 2.5rem}
-        .buy_and_price{width: 100%;height: 3rem;position: fixed;bottom: 0;left: 0;background-color: white;border-top:0.5px gray dashed;}
-        .buy_and_price .buy_{width: 29% ;margin:0;text-align: center;line-height: 100%;border-left:1px #DCDCDC solid; }
-        .buy_and_price img{width: 30%}
-        .buy_and_price div{display: inline-block;}
-        .buy_and_price .price{width: 50%;}
-        .price .price_color{color: orangered}
-        .buy_ .buy_button{margin: 0 auto; background-color: orangered;color: whitesmoke;border-radius:0.5rem;width: 60% ;line-height: 252%;height: 2rem;}
-        .head h2{display:inline-block;text-align: center;line-height: 2rem;height: 2rem;width: 68%;margin: 0;padding: 0}
-    </style>
+    <link rel="stylesheet" href="css/class_content.css"type="text/css">
 </head>
 <body>
 <div>
@@ -52,8 +25,8 @@
     <div class="class_list">
         <ul>
             <li class="lisi_hover">
-                <span>课程介绍</span>
-                <hr>
+                <span class="content_title">课程介绍</span>
+
                 <div class="list_click">
                     免费领取规则 <br>
                     1.加入星火英语考研交流群【559803391】<br>
@@ -105,32 +78,51 @@
                 </div>
             </li>
             <li>
-                  <span>目录</span>
-                <div>
+                  <span class="content_title">目录</span>
+                <div class="list_click_categary">
                     <ol type="1">
                         <li>
-                            <b>点链接</b>
+                            <b>点链网阅读法</b>
+                            <p>星火教研团队</p>
+                        </li>
+                        <li>
+                            <b>考研英语阅读题型概述</b>
+                            <p>星火教研团队</p>
 
                         </li>
                         <li>
-
+                            <b>点链网阅读法_寻找关键词（点）</b>
+                            <p>星火教研团队</p>
                         </li>
                         <li>
-
-                        </li>
-                        <li>
-
+                            <b>点链网阅读法_理解关键句（链）</b>
+                            <p>星火教研团队</p>
                         </li>
                     </ol>
                 </div>
             </li>
             <li>
-
+                 <span class="content_title">教师介绍</span>
+                <div class="hidden_tercher">
+                    <div>
+                        <img src="img/person.png" alt="">
+                        <span>景洪玲</span>
+                        <p>星火英语考研英语主讲教师，北京师范大学硕士，2010年度新东方教师说课擂台赛国内考试组全国冠军，原北京新东方
+                           学校国内考试部优秀教师，红领金考研英语点金系列丛书总编，独创“白金逆序”背词法，《21世纪报》撰稿人。</p>
+                    </div>
+                </div>
             </li>
             <li>
+                  <span class="content_title">评论</span>
+                 <div class="hidden_mark">
+                     <img src="img/background.png" alt="">
+                     <p>还没有人评论哦.</p>
 
+                 </div>
             </li>
+
         </ul>
+
     </div>
     <div >
         <div class="buy_and_price">

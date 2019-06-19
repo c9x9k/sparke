@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597b9372-fa28-46cc-86ca-f971f26a1e4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Spark_graduate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/class_content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/class_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/class_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduate.html" beforeDir="false" afterPath="$PROJECT_DIR$/graduate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparke" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,37 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class_content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-              <folding>
-                <element signature="e#2183#2189#1" expanded="true" />
-                <element signature="e#2249#2255#0" expanded="true" />
-                <element signature="e#2255#2261#0" expanded="true" />
-                <element signature="e#2396#2402#0" expanded="true" />
-                <element signature="e#2402#2408#0" expanded="true" />
-                <element signature="e#2408#2414#0" expanded="true" />
-                <element signature="e#2699#2705#0" expanded="true" />
-                <element signature="e#2705#2711#0" expanded="true" />
-                <element signature="e#2711#2717#0" expanded="true" />
-                <element signature="e#2852#2858#0" expanded="true" />
-                <element signature="e#2858#2864#0" expanded="true" />
-                <element signature="e#2864#2870#0" expanded="true" />
-                <element signature="e#2998#3004#0" expanded="true" />
-                <element signature="e#3004#3010#0" expanded="true" />
-                <element signature="e#3010#3016#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="853">
+              <caret line="116" column="42" lean-forward="true" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/class_content.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graduate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state relative-caret-position="1083">
+              <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -76,6 +78,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -85,18 +88,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/graduate.html" />
         <option value="$PROJECT_DIR$/class_content.html" />
+        <option value="$PROJECT_DIR$/css/class_content.css" />
+        <option value="$PROJECT_DIR$/graduate.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
-    <option name="y" value="62" />
+    <option name="x" value="110" />
+    <option name="y" value="80" />
     <option name="width" value="1755" />
-    <option name="height" value="984" />
+    <option name="height" value="985" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -130,6 +136,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -160,14 +167,18 @@
       <workItem from="1560902498696" duration="958000" />
       <workItem from="1560903486430" duration="155000" />
       <workItem from="1560903664700" duration="11279000" />
+      <workItem from="1560925066140" duration="2891000" />
+      <workItem from="1560933011017" duration="1320000" />
+      <workItem from="1560934646544" duration="2454000" />
+      <workItem from="1560943230439" duration="1274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16078000" />
+    <option name="totallyTimeSpent" value="24017000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="50" width="1404" height="787" extended-state="0" />
+    <frame x="88" y="64" width="1404" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321637" />
@@ -188,6 +199,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321637" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -210,9 +240,6 @@
     <entry file="file://$PROJECT_DIR$/img/img2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/customer_logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -223,9 +250,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/star.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/person.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/qr.png">
@@ -240,7 +264,10 @@
     <entry file="file://$PROJECT_DIR$/img/topic1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/topic1_process.png">
+    <entry file="file://$PROJECT_DIR$/img/person.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/background.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/slogan.png">
@@ -249,37 +276,30 @@
     <entry file="file://$PROJECT_DIR$/img/tick.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/topic1_process.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/img/topic2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/graduate.html">
+    <entry file="file://$PROJECT_DIR$/css/class_content.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        <state relative-caret-position="397">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/class_content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <element signature="e#2183#2189#1" expanded="true" />
-            <element signature="e#2249#2255#0" expanded="true" />
-            <element signature="e#2255#2261#0" expanded="true" />
-            <element signature="e#2396#2402#0" expanded="true" />
-            <element signature="e#2402#2408#0" expanded="true" />
-            <element signature="e#2408#2414#0" expanded="true" />
-            <element signature="e#2699#2705#0" expanded="true" />
-            <element signature="e#2705#2711#0" expanded="true" />
-            <element signature="e#2711#2717#0" expanded="true" />
-            <element signature="e#2852#2858#0" expanded="true" />
-            <element signature="e#2858#2864#0" expanded="true" />
-            <element signature="e#2864#2870#0" expanded="true" />
-            <element signature="e#2998#3004#0" expanded="true" />
-            <element signature="e#3004#3010#0" expanded="true" />
-            <element signature="e#3010#3016#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="853">
+          <caret line="116" column="42" lean-forward="true" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graduate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
         </state>
       </provider>
     </entry>
