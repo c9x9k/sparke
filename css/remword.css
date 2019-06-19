@@ -1,0 +1,48 @@
+.top-bar{
+	text-align: center;
+}
+.cet4or6:hover .div1{
+	background-color: white;
+}
+.div1{
+	display: none;
+}
+.cet4or6{
+	font-size: 1.2rem;
+}
+.first-ul{
+	padding-inline-start: 0px;
+}
+.show{
+	list-style-type: none;
+}
+.show-a{
+    list-style-type: none;
+    margin: 0.06rem;
+}
+.div-li{
+	
+}
+.div-a{
+	display: inline-block;
+	position: relative;
+    left: 1rem;
+    top: -1rem;
+}
+.img{
+	
+}
+.display-div{
+	display: none;
+}
+.second-ul{
+	padding-inline-start: 0px;
+    margin-left: 2.5em;
+}
+.hidden-li{
+	list-style-type: none;
+	margin-bottom: 0.011rem;
+}
+.category{
+	text-decoration: none;
+}
