@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto,Lato,sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: #fafafa;
+    color: rgba(0,0,0,.87);
+}
+.mine-container{
+    width: 100%;
+}
+.login-info{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0,0,0,.2);
+}
+.user-icon img{
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-left: 1rem;
+}
+.user-info{
+    margin-left: 1rem;
+    height: 4rem;
+    flex: 1;
+}
+.user-login{
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+.user-func{
+    font-size: 1rem;
+}
+.right{
+     margin-right: 0.8rem;
+     width: .5rem;
+     height: .9rem;
+ }
+.func-list{
+    width: 100%;
+}
+.func-item{
+    width: 100%;
+    height: 4rem;
+    margin-left: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #edeff0;
+}
+.func-name{
+    flex: 1;
+}
+.func-item span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.func-right{
+    margin-right: 1.63rem;
+    width: .5rem;
+    height: .9rem;
+}
+.remain{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #ffaf30;
+    margin-right: 1rem;
+}
+.worktime{
+    color: #c3c7cb;
+    margin-right: 1rem;
+}
+.bottom-func{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    background-color: #fff;
+    bottom: 0;border-top: 1px solid #edeff0;
+}
+.btn-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-container a{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-container img{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.btn-container span{
+    font-size: 0.3rem;
+}
